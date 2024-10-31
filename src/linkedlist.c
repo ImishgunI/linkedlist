@@ -30,7 +30,7 @@ int is_empty(list *node) { return (node == NULL) ? 1 : 0; }
 int size(list *node) {
     if (is_empty(node) != 0) {
         printf("list is empty");
-        return NULL;
+        return 0;
     }
     int len = 0;
     while (node != NULL) {
