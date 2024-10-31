@@ -7,5 +7,8 @@ typedef struct list {
 } list;
 
 void push(list** root, int value);
-list* pop();
+void pop(list** node);
+int is_empty(list* node);
+int size(list* node);
+list* find(list* node, int element);
 #endif
